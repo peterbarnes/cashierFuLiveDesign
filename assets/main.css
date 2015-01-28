@@ -5,6 +5,12 @@
    License: none (public domain)
 */
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,16 +57,17 @@ table {
 
 /* GLOBAL COLOR VARIABLES
    BLUE:   #3498DB;
+   BLUE2:  #1D81C4;
    BG:     #384047;
    WELLS:  #1F272E;
    HEADER: #06080A;
    GRAY:   #8D9AA5;
    RED:    #E74C3C;
+   RED2:   #BF2E1F;
  */
 
  body {
   background-color: #384047;
-  padding: 20px;
  }
 
  * {
@@ -69,8 +76,30 @@ table {
   font-weight: 200 !important;
  }
 
+ .navbar {
+  background-color: #1F272E;
+  padding: 15px;
+ }
+
+ a {
+  color: white;
+  text-decoration: none;
+ }
+
+ a:hover {
+  color: #3498db;
+ }
+
+ a.active {
+  color: #3498db;
+ }
+
+ a.active:hover {
+  color: #1D81C4;
+ }
+
  .well {
-  border-radius: 8px !important;
+  margin: 20px;
  }
 
  .well-header, .well-row, .well-row-bottom {
@@ -99,4 +128,61 @@ table {
  h2 {
   margin-bottom: 9px;
   margin-top: 9px;
+ }
+
+ .red {
+  color: #E74C3C;
+ }
+
+ .gray {
+  color: #8D9AA5;
+ }
+
+ .float-left {
+  float: left;
+ }
+
+ .float-right {
+  float: right;
+ }
+
+ .blue-circle-button {
+  margin: 0px !important;
+  background-color: #3498DB;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 12px;
+  padding-left: 12px;
+  border-radius: 50%;
+ }
+
+ .blue-circle-button:hover {
+  background-color: #1D81C4;
+  cursor: pointer;
+  color: white !important;
+ }
+
+ .red-circle-button {
+  margin: 0px !important;
+  background-color: #E74C3C;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 12px;
+  padding-left: 12px;
+  border-radius: 50%;
+ }
+
+ .red-circle-button:hover {
+  background-color: #BF2E1F;
+  cursor: pointer;
+  color: white !important;
+ }
+
+ .footer {
+  background-color: #1F272E;
+  padding: 15px;
+ }
+
+ .center-text {
+  text-align: center;
  }
