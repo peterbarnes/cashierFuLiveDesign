@@ -258,3 +258,33 @@ table {
  .big-top {
   margin-top: 14px !important;
  }
+
+ input.float-right {
+  background-color: #1F272E;
+  border: 0px;
+  font-size: 16px;
+  text-align: right;
+  margin: 0px;
+  margin-top: 7px;
+  width: 50%;
+ }
+
+ input.float-right:focus {
+  outline: none;
+ }
+
+ ::-webkit-input-placeholder {
+   color: #8D9AA5;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #8D9AA5; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #8D9AA5;  
+}
+
+:-ms-input-placeholder {  
+   color: #8D9AA5;  
+}

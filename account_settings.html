@@ -6,16 +6,20 @@
 </head>
 <body>
   <div class="navbar group">
-    <a href="#" class="float-left no-margin nav-left">
-      <img src="assets/logo.png" width="45px" height="45px" class="float-left">
-      <h2 class="float-left big-top">&nbsp;&nbsp;Store name</h2>
-    </a>
-    <a href="#" class="float-right no-margin nav-right">
-      <h2 class="gray-circle-button linear float-left">user</h2>
-      &nbsp;
-      &nbsp;
-      <h2 class="float-right">example@example.com</h2>
-    </a>
+    <div class="navbar-dropdown">
+      <a href="#" class="float-left no-margin nav-left">
+        <img src="assets/logo.png" width="45px" height="45px" class="float-left">
+        <h2 class="float-left big-top">&nbsp;&nbsp;Store name</h2>
+      </a>
+    </div>
+    <div class="navbar-dropdown">
+      <a href="#" class="float-right no-margin nav-right">
+        <h2 class="gray-circle-button linear float-left">user</h2>
+        &nbsp;
+        &nbsp;
+        <h2 class="float-right">example@example.com</h2>
+      </a>
+    </div>
   </div>
   <div class="well">
     <div class="well-header">
@@ -23,15 +27,15 @@
     </div>
     <div class="well-row group">
       <h2 class="float-left">E-Mail</h2>
-      <h2 class="float-right">example@example.com</h2>
+      <input type="text" name="email" placeholder="Enter E-Mail address" value="example@example.com" class="float-right">
     </div>
     <div class="well-row group">
       <h2 class="float-left">Password</h2>
-      <h2 class="float-right">********</h2>
+      <input type="password" name="password" placeholder="Enter password" value="password" class="float-right">
     </div>
     <div class="well-row-bottom group">
       <h2 class="float-left">Password Confirmation</h2>
-      <h2 class="gray float-right">Enter password confirmation</h2>
+      <input type="password" name="password" placeholder="Enter password confirmation" class="float-right">
     </div>
   </div>
   <div class="well">
@@ -78,6 +82,7 @@
       <a href="#">Privacy Policy</a>
     </h2>
   </div>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="assets/main.js"></script>  
 </body>
 </html>
