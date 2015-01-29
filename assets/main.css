@@ -60,11 +60,23 @@ table {
    BLUE2:  #1D81C4;
    BG:     #384047;
    WELLS:  #1F272E;
+   WELLS2: #151A1F;
    HEADER: #06080A;
    GRAY:   #8D9AA5;
+   GRAY2:  #7D8891;
    RED:    #E74C3C;
    RED2:   #BF2E1F;
  */
+
+ @font-face {
+  font-family: MonoSocial;
+  src: url(monosocial.ttf);
+ }
+
+ @font-face {
+  font-family: LinearIcons;
+  src: url(linearicons.ttf);
+ }
 
  body {
   background-color: #384047;
@@ -76,9 +88,19 @@ table {
   font-weight: 200 !important;
  }
 
+ .mo {
+  font-family: MonoSocial !important;
+  font-size: 25px;
+  margin: 0px !important;
+  margin-top: 5px !important;
+ }
+
+ .linear {
+  font-family: LinearIcons !important;
+ }
+
  .navbar {
   background-color: #1F272E;
-  padding: 15px;
  }
 
  a {
@@ -151,8 +173,8 @@ table {
   background-color: #3498DB;
   padding-top: 9px;
   padding-bottom: 9px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
   border-radius: 50%;
  }
 
@@ -167,8 +189,8 @@ table {
   background-color: #E74C3C;
   padding-top: 9px;
   padding-bottom: 9px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
   border-radius: 50%;
  }
 
@@ -178,6 +200,16 @@ table {
   color: white !important;
  }
 
+ .gray-circle-button {
+  margin: 0px !important;
+  background-color: #8D9AA5;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 50%;
+ }
+
  .footer {
   background-color: #1F272E;
   padding: 15px;
@@ -185,4 +217,44 @@ table {
 
  .center-text {
   text-align: center;
+ }
+
+ .no-margin {
+  margin: 0px !important;
+ }
+
+ .nav-right {
+  border-left: 1px solid #384047;
+  padding: 15px;
+ }
+
+ .nav-right:hover {
+  background-color: #151A1F;
+ }
+
+ .nav-left {
+  border-right: 1px solid #384047;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+
+ .nav-left:hover {
+  background-color: #151A1F;
+ }
+
+ .logo {
+  font-family: Georgia !important;
+  margin: 0px !important;
+  background-color: #3498db;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 50%;
+ }
+
+ .big-top {
+  margin-top: 14px !important;
  }
