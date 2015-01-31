@@ -68,10 +68,7 @@ table {
    RED2:   #BF2E1F;
  */
 
- @font-face {
-  font-family: MonoSocial;
-  src: url(monosocial.ttf);
- }
+  
 
  @font-face {
   font-family: LinearIcons;
@@ -88,8 +85,7 @@ table {
   font-weight: 200 !important;
  }
 
- .mo {
-  font-family: MonoSocial !important;
+ .symbol {
   font-size: 25px;
   margin: 0px !important;
   margin-top: 5px !important;
@@ -226,6 +222,7 @@ table {
  .nav-right {
   border-left: 1px solid #384047;
   padding: 15px;
+  width: 214px;
  }
 
  .nav-right:hover {
@@ -238,6 +235,7 @@ table {
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 250px;
  }
 
  .nav-left:hover {
@@ -269,7 +267,19 @@ table {
   width: 50%;
  }
 
- input.float-right:focus {
+ input.float-left {
+  background-color: #1F272E;
+  border: 0px;
+  font-size: 16px;
+  text-align: left;
+  margin: 0px;
+  margin-left: 43px;
+  margin-top: 7px;
+  width: 20%;
+  border-right: 1px solid #384047;
+ }
+
+ input.float-right:focus, input.float-left:focus {
   outline: none;
  }
 
@@ -287,4 +297,44 @@ table {
 
 :-ms-input-placeholder {  
    color: #8D9AA5;  
+}
+
+.menu-left, .menu-right {
+  display: none;
+  background-color: #1F272E;
+  border-top: 1px solid #384047;
+}
+
+.menu-left {
+  border-right: 1px solid #384047;
+  border-bottom: 1px solid #384047;
+  width: 275px;
+  position: absolute;
+}
+
+.menu-right {
+  border-left: 1px solid #384047;
+  border-bottom: 1px solid #384047;
+  width: 245px;
+  position: relative;
+}
+
+.menu-item {
+  padding: 20px;
+}
+
+.menu-right .menu-item {
+  text-align: right;
+}
+
+.menu-item:hover {
+  background-color: #151A1F !important;
+}
+
+.no-border {
+  border: 0px !important;
+}
+
+.icon-credit-card {
+  margin-top: 7px;
 }
